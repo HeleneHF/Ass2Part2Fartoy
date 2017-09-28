@@ -1,0 +1,33 @@
+%% This is the main file and you use this file to organize your assignment.
+
+\documentclass[a4paper]{article}	  
+\usepackage[margin=3cm]{geometry} 	   % Choose your margin here. 
+\include{packages}
+
+\newcommand{\figref}[1]{\figurename~\ref{#1}}
+
+\let\endtitlepage\relax						% Begin the text immediately after the title page. Optional
+\setlength{\parindent}{0cm}				% Start paragraph without indent. Optional
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\Large TTK4190 Guidance and Control of Vehicles \\
+\large{Assignment 2 Part 1}
+\vspace{8pt}
+\large Fall 2017 \\
+\vspace{8pt}
+\large Helene Hogstad Fossum -- 750189
+\end{center}
+\vspace{8pt}
+\end{titlepage}
+
+\input{Problem_1}
+\input{Problem_2}
+
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography.bib}
+
+\end{document}
